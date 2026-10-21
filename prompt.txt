@@ -1,0 +1,22 @@
+Tema: Formula 1
+Scopul: Prezentarea sezonului curent de F1 cu echipe, piloti, circuite si rezultate
+Publicul tinta: Fanii si Urmaritorii F1
+Header: Titlul paginii si un nav cu echipe, piloti, circuite, rezultate+clasament
+About: un scurt citat sau descriere a sportului
+Services: Paginile principale, cu carduri echipe, piloti, circuite, si sub clasamentul curent 
+Contact: inscrierea la un newsletter
+Footer: copyrights
+culori: alb rosu pe pagina principala; pe paginile echipelor vor fi culorile respectivei echipe, la piloti raman culorile echipelor din care fac parte iar la circuite un gri inchis care mimeaza culoarea asfaltului
+Tehnologii: HTML5 semantic, CSS3, Flexbox si media queries
+Cerinte speciale: responsive design, ca site-ul sa poata fi coerent si pe un laptop, dasktop, telefon sau un ecran mai mare
+
+1st Prompt: "Creeaza o pagina web pentru Formula 1 cu scopul de prezentare a sezonului curent cu o sectiune echipe, piloti, circuite si rezultate.
+Pagina trebuie sa contina un Header cu titlul paginii si un nav cu sectiunile respective, o sectiune about in care sa fie o scurta descriere a sportului, o sectiune services unde sa apara carduri cu cele 4 sectiuni,
+iar sub acestea clasamentul actual, o sectiune de contact pentru ca utilizatorul sa se poata abona la un newsletter, si un footer cu copyrights.
+Foloseste HTML5 semantic si CSS3, Flexbox pentru organizarea elementelor si media queries pentru responsive design. Utilizeaza un design modern, fonturile folosite in pagina principala a F1; 
+culorile vor fi urmatoarele: pentru pagina principala alb si rosu, pentru echipe culorile reprezentative, pentru piloti vor ramane culorile echipelor din care fac parte, iar pentru circuite un gri inchis;
+include si cateva imagini reprezentative pentru fiecare pilot echipa si circuit.
+foloseste responsive design pentru ca pagina sa poata fi vizionata pe un laptop, desktop, telefon sau un ecran mai mare;
+codul trebuie sa fie realizat in index.html si style.css."
+
+2nd Prompt: "Vreau sa includa toate echipele si toti pilotii (in sezonul 2026 sunt 11 echipe si 22 de piloti), de asemenea in sectiunea rezultate si clasament vreau sa fie clasamentul intreg si toate rezultatele curselor de anul acesta plus cursele viitoare."
