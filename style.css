@@ -679,24 +679,22 @@ img {
     }
 }
 
-/* =========================================
-   ÎMBUNĂTĂȚIRI MANUALE (PASUL 5)
-   ========================================= */
+/*Imbunatatiri*/
 
 /* 1. Uniformizarea înălțimii tuturor imaginilor din carduri */
 .team-card img,
 .driver-card img,
 .circuit-card img {
     width: 100%;
-    height: 220px; /* Forțează aceeași înălțime peste tot */
-    object-fit: cover; /* Taie imaginea proporțional fără să o deformeze */
-    transition: transform 0.4s ease; /* Pregătire pentru un mic efect de zoom */
+    height: 220px; 
+    object-fit: cover;
+    transition: transform 0.4s ease;
 }
 
 /* 2. Efect de ridicare (Lift-up) a cardului la hover */
 .team-card,
 .driver-card {
-    position: relative; /* Necesar pentru overlay-ul de culoare */
+    position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -720,11 +718,11 @@ img {
     top: 0;
     left: 0;
     width: 100%;
-    height: 220px; /* Trebuie să fie identic cu înălțimea imaginii de mai sus */
+    height: 220px;
     opacity: 0;
     transition: opacity 0.3s ease;
-    pointer-events: none; /* Permite click-ul prin culoare */
-    mix-blend-mode: multiply; /* Creează efectul de "tint" (filtru de culoare transparent) */
+    pointer-events: none;
+    mix-blend-mode: multiply;
 }
 
 /* 5. Alocarea culorii overlay-ului pentru fiecare echipă */
@@ -746,9 +744,6 @@ img {
     opacity: 0.6; /* Poți ajusta valoarea între 0.3 și 0.9 pentru o culoare mai slabă/intensă */
 }
 
-/* =========================================
-   7. Hover pentru Circuite (Tenta Gri)
-   ========================================= */
 .circuit-card {
     position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -756,22 +751,21 @@ img {
 
 .circuit-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); /* Umbră un pic mai pronunțată pe fundalul închis */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 .circuit-card:hover img {
     transform: scale(1.05);
 }
 
-/* Overlay-ul gri peste imaginea circuitului */
 .circuit-card::after {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 220px; /* Acoperă exact zona imaginii */
-    background-color: #555562; /* Gri metalic */
+    height: 220px;
+    background-color: #555562;
     opacity: 0;
     transition: opacity 0.3s ease;
     pointer-events: none;
@@ -782,62 +776,47 @@ img {
     opacity: 0.7; /* O face vizibilă doar la hover */
 }
 
-/* =========================================
-   8. Hover pentru Rezultate (Tenta Roșie)
-   ========================================= */
 .result-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 .result-card:hover {
     transform: translateY(-6px);
-    /* Umbră cu tentă roșie specifică F1 */
     box-shadow: 0 8px 24px rgba(225, 6, 0, 0.15); 
-    /* Fundalul se schimbă foarte fin spre roșu-deschis */
     background-color: #fff2f2; 
 }
 
-/* O nuanță puțin mai intensă pentru cursele viitoare care au deja un fundal ușor diferit */
 .upcoming-card:hover {
     background-color: #ffe6e6;
 }
 
-/* =========================================
-   9. Hover pentru Butoane
-   ========================================= */
+
 .btn-primary {
     transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 }
 
 .btn-primary:hover {
-    background-color: var(--f1-red-dark); /* Roșu mai închis la hover */
-    transform: translateY(-3px); /* Se ridică puțin */
-    box-shadow: 0 6px 15px rgba(225, 6, 0, 0.35); /* Strălucire (glow) roșie */
+    background-color: var(--f1-red-dark);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(225, 6, 0, 0.35);
 }
 
-/* Butonul de Newsletter alb din bara de navigare de sus */
 .nav-list a.nav-cta {
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
 }
 
 .nav-list a.nav-cta:hover {
-    background-color: var(--text-dark); /* Se face negru carbon */
+    background-color: var(--text-dark);
     color: var(--bg-white);
-    transform: scale(1.05); /* Se mărește subtil */
+    transform: scale(1.05);
 }
 
-/* =========================================
-   10. Hover animat pentru linkurile din Navbar
-   ========================================= */
-
-/* Setăm poziția relativă pentru a putea ancora sublinierea animată */
 .nav-list a:not(.nav-cta) {
     position: relative;
-    padding-bottom: 4px; /* Un mic spațiu sub text pentru linie */
+    padding-bottom: 4px;
     transition: opacity 0.3s ease;
 }
 
-/* Creăm linia de subliniere (inițial are lățimea 0) */
 .nav-list a:not(.nav-cta)::after {
     content: '';
     position: absolute;
@@ -849,12 +828,10 @@ img {
     transition: width 0.3s ease; /* Animația de creștere a lățimii */
 }
 
-/* La hover, lățimea liniei devine 100% (se umple de la stânga la dreapta) */
 .nav-list a:not(.nav-cta):hover::after {
     width: 100%;
 }
 
-/* Opțional: o ușoară reducere a opacității textului pentru un efect mai fin */
 .nav-list a:not(.nav-cta):hover {
     opacity: 0.85;
 }
