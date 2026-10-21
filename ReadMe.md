@@ -69,4 +69,4 @@ Pe lângă actualizarea conținutului, a imaginilor și a paletei cromatice ofic
 
 ## 6. Link Publicare (GitHub Pages)
 Proiectul poate fi accesat live la următoarea adresă:
-👉 **[Adaugă aici linkul tău de GitHub Pages după publicare]**
+👉 **https://github.com/nathanfilip/f1-2026.git**
